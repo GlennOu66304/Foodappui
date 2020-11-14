@@ -1,0 +1,6 @@
+module Pods_foodappui_foodappuiTests {
+  umbrella header "Pods-foodappui-foodappuiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
