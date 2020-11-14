@@ -1,5 +1,7 @@
 /**
  * @format
+ * 1
+ * 2
  */
 
 import {AppRegistry} from 'react-native';
