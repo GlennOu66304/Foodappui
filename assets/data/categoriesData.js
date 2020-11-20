@@ -1,21 +1,21 @@
 const categoriesData = [
 {
     id: 1,
-    images: require('../images/pizza-icon.png'),
+    image: require('../images/pizza-icon.png'),
     title: 'Pizza',
     selected: true,
 },
 {
     id: 2,
-    images: require('../images/pizza-icon.png'),
+    image: require('../images/shrimp-icon.png'),
     title: 'Seafood',
-    selected: true,
+    selected: false,
 },
 {
     id: 3,
-    images: require('../images/pizza-icon.png'),
+    image: require('../images/soda-icon.png'),
     title: 'Soft Drinks',
-    selected: true,
+    selected: false,
 },
 
 ];
