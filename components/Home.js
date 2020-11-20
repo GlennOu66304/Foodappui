@@ -9,6 +9,7 @@ import { color } from 'react-native-reanimated';
 import { FlatList } from 'react-native-gesture-handler';
 
 Feather.loadFont();
+MaterialCommunityIcons.loadFont();
 
 export default  Home = () => {
    const renderCategoryItem = ({ item }) => {
@@ -80,9 +81,30 @@ export default  Home = () => {
        <View style={styles.popularWrapper}>
         <Text style={styles.popularTitle}>Popular</Text>
         {popularData.map((item) => ( 
-            <View>
-                <Text>Hello</Text>
+            <View style={[styles.popularCardwrapper,
+                {
+                    marginTop: item.id == 1 ? 10 :20,
+                }
+            ]}>
+             <View>
+                <View>
+                    <View style={styles.popularTopWrapper}>   
+            <MaterialCommunityIcons
+            name="crown"
+            size={12}
+            color={colors.primary}
+            />
+            <Text style={styles.popularText}>Top of the week </Text> 
             </View>
+            <View styele={styles.popularTitlesWrapper}>
+                 <Text>{item.title}</Text>
+                 <Text> Weight {item.weight}</Text>
+                </View>
+            </View>
+            </View>
+            </View>
+            
+
         ))}
        </View>
        </View>
@@ -185,10 +207,27 @@ searchWrapper:{
         },
         popularWrapper:{
             paddingHorizontal:20,
+
         },
         popularTitle:{
             fontFamily:"Montserrat-Bold",
             fontSize:16,
         },
+        popularCardwrapper:{
+         backgroundColor: colors.white,
+         borderRadius: 25,
+         paddingTop:20,
+         paddingLeft: 20,
+         flexDirection: 'row',
+        },
+        popularTopWrapper:{
+           flexDirection:'row',
+           alignItems: 'center',
+        },
+        popularText:{
+           marginLeft: 10,
+           fontFamily: 'Montserrat-Semibold',
+           fontSize: 14,
+        }
 
 });
