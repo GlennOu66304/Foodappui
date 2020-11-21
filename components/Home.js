@@ -83,7 +83,9 @@ export default  Home = () => {
        <View style={styles.popularWrapper}>
         <Text style={styles.popularTitle}>Popular</Text>
         {popularData.map((item) => ( 
-            <View style={[styles.popularCardwrapper,
+            <View 
+            key={item.id}
+            style={[styles.popularCardwrapper,
                 {
                     marginTop: item.id == 1 ? 10 :20,
                 }
