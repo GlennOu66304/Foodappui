@@ -6,7 +6,7 @@ import categoriesData from '../assets/data/categoriesData';
 import popularData from '../assets/data/popularData';
 import colors from '../assets/colors/colors';
 import { color } from 'react-native-reanimated';
-import { FlatList } from 'react-native-gesture-handler';
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
 
 Feather.loadFont();
 MaterialCommunityIcons.loadFont();
@@ -42,6 +42,8 @@ export default  Home = () => {
 
    return (
        <View style={styles.container}>
+           <ScrollView contentInsetAdjustmentBehavior='automatic'
+           showsVerticalScrollIndicator={false}>
         { /* Header */}
         <SafeAreaView>
             <View style={styles.headerWrapper}>
@@ -96,17 +98,37 @@ export default  Home = () => {
             />
             <Text style={styles.popularText}>Top of the week </Text> 
             </View>
-            <View styele={styles.popularTitlesWrapper}>
-                 <Text>{item.title}</Text>
-                 <Text> Weight {item.weight}</Text>
+
+            <View style={styles.popularTitlesWrapper}>
+                 <Text style={styles.popularTitlesTitle}>{item.title}</Text>
+                 <Text style={styles.popularTitlesWeight}> Weight {item.weight}</Text>
                 </View>
             </View>
-            </View>
-            </View>
-            
 
+            <View style={styles.popularCardbottom}>
+                <View style={styles.addPizzaButton}>
+                    <Feather name='plus' size={10} color={colors.textDark} />
+                    </View>
+
+                    <View style={styles.ratingWrapper}> 
+                     < MaterialCommunityIcons 
+                        name='star'
+                        size={10}
+                        color={colors.textDark}
+                     />
+                    <Text style={styles.rating}>{item.rating}</Text>
+                    
+                    </View>
+                </View>
+            </View>
+
+            <View style={styles.popularCardright}> 
+            <Image source={item.image} style={styles.popularCardImage} />
+            </View>
+            </View>     
         ))}
        </View>
+       </ScrollView>
        </View>
    );
 };
@@ -177,6 +199,15 @@ searchWrapper:{
             marginRight:20,
             alignSelf:'center',
             borderRadius: 20,
+            shadowColor: colors.black,
+            shadowOffset: {
+                width: 0,
+                height: 2,
+            },
+            shadowOpacity: 0.05,
+            shadowColor: 10,
+            elevation: 2,
+
 
         },
         categoryItemImage:{
@@ -219,6 +250,15 @@ searchWrapper:{
          paddingTop:20,
          paddingLeft: 20,
          flexDirection: 'row',
+         overflow:'hidden',
+         shadowColor: colors.black,
+            shadowOffset: {
+                width: 0,
+                height: 2,
+            },
+            shadowOpacity: 0.05,
+            shadowColor: 10,
+            elevation: 2,
         },
         popularTopWrapper:{
            flexDirection:'row',
@@ -228,6 +268,51 @@ searchWrapper:{
            marginLeft: 10,
            fontFamily: 'Montserrat-Semibold',
            fontSize: 14,
-        }
-
+        },
+        popularTitlesWrapper:{
+          marginTop:20,
+        },
+        popularTitlesTitle:{
+            fontFamily: 'Montserrat-Semibold',
+            fontSize: 14,
+            color: colors.textDark,
+         },
+         popularTitlesWeight:{
+             fontFamily:'Montserrat-Medium',
+             fontSize: 12,
+             color: colors.textLight,
+             marginTop: 5,
+         },
+         popularCardbottom:{
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginTop: 10,
+            marginLeft: -20,
+         },
+         addPizzaButton:{
+            backgroundColor: colors.primary,
+            paddingHorizontal: 40,
+            paddingVertical: 20,
+            borderTopRightRadius: 25,
+            borderBottomLeftRadius: 25,
+         },
+         ratingWrapper:{
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginLeft: 20,
+         },
+         rating:{
+           fontFamily: 'Montserrat-Semibold',
+           fontSize: 12,
+           color: colors.textDark ,
+           marginLeft: 5,
+         },
+         popularCardright:{
+         marginLeft: 40,
+         },
+         popularCardImage:{
+           width: 210,
+           height: 125,
+           resizeMode: 'contain',
+         },
 });
