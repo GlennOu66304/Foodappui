@@ -1,0 +1,4 @@
+#Sun Nov 22 16:12:09 CST 2020
+base.0=/Users/zt/Foodappui/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

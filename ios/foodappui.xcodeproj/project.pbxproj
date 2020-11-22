@@ -18,6 +18,7 @@
 		5603983EEA6443F99D70A4C9 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B3CA3F221441D9A8841B5C /* Montserrat-Medium.ttf */; };
 		75FF9F357110410CB83DEB1A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A066B9DAB764400B12DBBFF /* Montserrat-Regular.ttf */; };
 		7912E42CE316F0B6FA54AF22 /* libPods-foodappui-foodappuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FDD4CDF15434367A996112 /* libPods-foodappui-foodappuiTests.a */; };
+		7BF652AE256A398400889EDC /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7BF652AD256A398400889EDC /* bundle */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9BD58BBFDDC267FB16857BA6 /* libPods-foodappui-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A0A76C50B1BC335CB5AF7E /* libPods-foodappui-tvOSTests.a */; };
 		A825AE5CF74485339E1B2E55 /* libPods-foodappui-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DAB6A330BE9E24EB2B60B7 /* libPods-foodappui-tvOS.a */; };
@@ -60,18 +61,19 @@
 		2B2DF90C9E8E0D479E761D61 /* Pods-foodappui-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOS/Pods-foodappui-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* foodappui-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodappui-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* foodappui-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "foodappui-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A066B9DAB764400B12DBBFF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		56DA845205FE47ECA03EE003 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		4A066B9DAB764400B12DBBFF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		56DA845205FE47ECA03EE003 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		5FDE6C1CC2B16E7474009FF1 /* libPods-foodappui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A0A76C50B1BC335CB5AF7E /* libPods-foodappui-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF652AD256A398400889EDC /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = foodappui/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C70676688ACB82EC6FF6D73 /* Pods-foodappui-foodappuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-foodappuiTests.debug.xcconfig"; path = "Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		900041CB14A440FB8161A054 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		900041CB14A440FB8161A054 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		A2C39EA221A2507EAE6DD823 /* Pods-foodappui-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOS.release.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOS/Pods-foodappui-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BA547106F4DE93B4EBB4E67B /* Pods-foodappui-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOSTests/Pods-foodappui-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF5FD410E2776601F42620F8 /* Pods-foodappui-foodappuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-foodappuiTests.release.xcconfig"; path = "Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1FDD4CDF15434367A996112 /* libPods-foodappui-foodappuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-foodappuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6B3CA3F221441D9A8841B5C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		D6B3CA3F221441D9A8841B5C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F7DAB6A330BE9E24EB2B60B7 /* libPods-foodappui-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 		13B07FAE1A68108700A75B9A /* foodappui */ = {
 			isa = PBXGroup;
 			children = (
+				7BF652AD256A398400889EDC /* bundle */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -166,7 +169,6 @@
 				56DA845205FE47ECA03EE003 /* Montserrat-SemiBold.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -215,7 +217,6 @@
 				242758463498D8A270103C0A /* Pods-foodappui-tvOSTests.debug.xcconfig */,
 				BA547106F4DE93B4EBB4E67B /* Pods-foodappui-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -315,6 +316,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = LFQ583MQ6A;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -362,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				7BF652AE256A398400889EDC /* bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				EB58ED18A6134440BFDC89E0 /* Montserrat-Bold.ttf in Resources */,
 				5603983EEA6443F99D70A4C9 /* Montserrat-Medium.ttf in Resources */,
@@ -745,6 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFQ583MQ6A;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = foodappui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -768,6 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFQ583MQ6A;
 				INFOPLIST_FILE = foodappui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
