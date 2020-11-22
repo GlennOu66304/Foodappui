@@ -1,17 +1,23 @@
 import * as React from 'react';
-import {View,Text,StyleSheet,SafeAreaView,Image} from 'react-native';  
+import {
+    View,
+    Text,
+    StyleSheet,
+    SafeAreaView,
+    Image
+} from 'react-native';  
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import categoriesData from '../assets/data/categoriesData';
 import popularData from '../assets/data/popularData';
 import colors from '../assets/colors/colors';
 import { color } from 'react-native-reanimated';
-import { FlatList, ScrollView } from 'react-native-gesture-handler';
+import { FlatList, ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
 Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
-export default  Home = () => {
+export default  Home = ({navigation}) => {
    const renderCategoryItem = ({ item }) => {
        return (
         <View style={[
@@ -83,8 +89,12 @@ export default  Home = () => {
        <View style={styles.popularWrapper}>
         <Text style={styles.popularTitle}>Popular</Text>
         {popularData.map((item) => ( 
-            <View 
+            <TouchableOpacity
             key={item.id}
+            onPress={() => navigation.navigate('Details',{
+                item:item,
+            })}>
+            <View 
             style={[styles.popularCardwrapper,
                 {
                     marginTop: item.id == 1 ? 10 :20,
@@ -128,6 +138,7 @@ export default  Home = () => {
             <Image source={item.image} style={styles.popularCardImage} />
             </View>
             </View>     
+            </TouchableOpacity>
         ))}
        </View>
        </ScrollView>
